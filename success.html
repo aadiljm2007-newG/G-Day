@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success!</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Tri-Pane Layout Container to keep the same style -->
+  <div class="tri-pane-layout">
+    
+    <main class="pane pane-middle">
+      <div style="position: absolute; top: 30px; left: 50%; transform: translateX(-50%); text-align: center; font-family: 'JetBrains Mono', monospace; font-weight: bold; width: 80%; max-width: 600px; z-index: 100;">
+        <div id="progress-text" style="font-size: 24px; margin-bottom: 10px;">Progress: 0/3</div>
+        <div style="width: 100%; border: 4px solid #000; height: 30px; background: #fff; box-shadow: 4px 4px 0 #000;">
+          <div id="progress-fill" style="width: 0%; height: 100%; background: #FF90E8; transition: width 0.3s ease;"></div>
+        </div>
+      </div>
+
+      <div class="wife-question">
+        <h1 class="wq-title" style="margin-bottom: 40px; font-size: 36px; margin-top: 100px;">Choose the Language to view First :3</h1>
+        <div class="wq-buttons" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 20px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; flex: 1; max-width: 30vw;">
+            <img src="English/Cute5.jpeg" style="width: 100%; height: auto; max-height: 65vh; object-fit: contain; border: 4px solid #000; box-shadow: 6px 6px 0 #000; background: #fff;" />
+            <button class="wq-btn" style="padding: 12px 32px; font-size: 24px;" onclick="window.location.href='english.html'">SARAH</button>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; flex: 1; max-width: 30vw;">
+            <img src="Tamil/Saree.jpeg" style="width: 100%; height: auto; max-height: 65vh; object-fit: contain; border: 4px solid #000; box-shadow: 6px 6px 0 #000; background: #fff;" />
+            <button class="wq-btn" style="padding: 12px 32px; font-size: 24px;" onclick="window.location.href='tamil.html'">ஸாராஹ்</button>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; flex: 1; max-width: 30vw;">
+            <img src="hindi/Hindi2.jpeg" style="width: 100%; height: auto; max-height: 65vh; object-fit: contain; border: 4px solid #000; box-shadow: 6px 6px 0 #000; background: #fff;" />
+            <button class="wq-btn" style="padding: 12px 32px; font-size: 24px;" onclick="window.location.href='hindi.html'">साराह्</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    const visitedTamil = localStorage.getItem('visited_tamil') === 'true';
+    const visitedEnglish = localStorage.getItem('visited_english') === 'true';
+    const visitedHindi = localStorage.getItem('visited_hindi') === 'true';
+    
+    let count = 0;
+    if (visitedTamil) count++;
+    if (visitedEnglish) count++;
+    if (visitedHindi) count++;
+
+    const progressFill = document.getElementById('progress-fill');
+    const progressText = document.getElementById('progress-text');
+    
+    progressFill.style.width = (count / 3 * 100) + '%';
+    progressText.innerText = 'Progress: ' + count + '/3';
+
+    if (count === 3) {
+      setTimeout(() => {
+        window.location.href = 'final.html';
+      }, 1500); // 1.5s delay to see 3/3 before teleporting
+    }
+  </script>
+</body>
+</html>
