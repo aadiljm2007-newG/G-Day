@@ -617,4 +617,19 @@ body {
   #final-img {
     max-width: 80vw !important;
   }
+
+  .wife-question {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    padding-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .pane-middle {
+    height: auto !important;
+    overflow-y: auto !important;
+  }
 }

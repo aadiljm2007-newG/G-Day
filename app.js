@@ -170,7 +170,7 @@ window.addEventListener('resize', () => {
 const yesBtn = document.getElementById('yes-btn');
 const noBtn = document.getElementById('no-btn');
 
-if (yesBtn && noBtn) {
+if (yesBtn && noBtn && window.innerWidth > 768) {
     // Wait slightly to ensure CSS styling and layout are fully applied
     setTimeout(() => {
         const yesRect = yesBtn.getBoundingClientRect();

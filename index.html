@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Reset progress when landing on the initial page -->
+  <script>
+    localStorage.removeItem('visited_tamil');
+    localStorage.removeItem('visited_english');
+    localStorage.removeItem('visited_hindi');
+  </script>
 
   <!-- Tri-Pane Layout Container -->
   <div class="tri-pane-layout">
