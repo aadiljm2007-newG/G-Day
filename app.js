@@ -278,4 +278,21 @@ if (yesBtn && noBtn && window.innerWidth > 768) {
         noBtn.addEventListener('click', () => window.location.href = 'success.html');
 
     }, 100); // 100ms delay to let layout calculate
+} else if (yesBtn && noBtn) {
+    // Basic event listeners for mobile where physics are disabled
+    yesBtn.addEventListener('click', () => window.location.href = 'success.html');
+    noBtn.addEventListener('click', () => window.location.href = 'success.html');
+}
+
+// Mobile Canvas Cleanup: Fade out flowers so user can interact with the UI
+if (window.innerWidth <= 768) {
+    setTimeout(() => {
+        if (render && render.canvas) {
+            render.canvas.style.transition = 'opacity 2s ease';
+            render.canvas.style.opacity = '0';
+            setTimeout(() => {
+                render.canvas.style.pointerEvents = 'none';
+            }, 2000);
+        }
+    }, 4000);
 }
