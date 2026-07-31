@@ -810,9 +810,9 @@ body {
 
 @media (max-width: 768px) {
     .inline-style-8a2a762b {
-        top: auto !important;
-        bottom: 5% !important;
-        transform: translateX(-50%) !important;
+        top: 75% !important;
+        bottom: auto !important;
+        transform: translate(-50%, -50%) !important;
     }
     #final-img {
         transform: rotate(0deg) !important;
