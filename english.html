@@ -137,7 +137,7 @@
         const offsetY = (Math.random() - 0.5) * offsetRange;
         
         // Initial drop animation state
-        img.style.top = `calc(50% + ${offsetY}px)`;
+        img.style.top = `calc(${isMobile ? '60%' : '50%'} + ${offsetY}px)`;
         img.style.left = `calc(50% + ${offsetX}px)`;
         img.style.transform = `translate(-50%, -50%) rotate(${rot}deg) scale(1.5)`;
         img.style.opacity = '0';
