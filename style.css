@@ -743,3 +743,13 @@ body {
     }
 }
 
+
+@media (max-width: 768px) {
+    .inline-style-94e770e9 {
+        padding: 5px 10px !important;
+        font-size: 12px !important;
+        top: 10px !important;
+        left: 10px !important;
+    }
+}
+
