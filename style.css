@@ -590,22 +590,30 @@ body {
   #language-layout {
     display: flex !important;
     flex-direction: column !important;
-    height: auto !important;
+    height: 100vh !important;
     min-height: 100vh !important;
+    overflow: hidden !important;
   }
 
   #image-canvas {
-    height: 50vh !important;
+    height: 40vh !important;
     flex: none !important;
     border-bottom: 4px solid #000 !important;
   }
 
   #lyrics-pane {
-    height: auto !important;
+    height: 60vh !important;
     flex: none !important;
-    padding: 20px !important;
+    padding: 10px !important;
     align-items: center !important;
     text-align: center !important;
+    overflow: hidden !important;
+  }
+
+  #lyrics-container {
+    padding: 15px !important;
+    margin-bottom: 10px !important;
+    font-size: 16px !important;
   }
 
   /* Final page */
@@ -617,7 +625,29 @@ body {
   #final-img {
     max-width: 80vw !important;
   }
+}
 
+.polaroid-img {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    background-color: #fff;
+    border: 12px solid #fff;
+    border-bottom: 50px solid #fff;
+    box-shadow: 8px 8px 0 #000;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 768px) {
+    .polaroid-img {
+        width: 50vw;
+        max-width: 250px;
+        border: 8px solid #fff;
+        border-bottom: 30px solid #fff;
+    }
   .wife-question {
     position: relative !important;
     top: auto !important;

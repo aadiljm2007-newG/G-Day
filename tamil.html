@@ -130,20 +130,14 @@
         if (!isSpecial) currentImageIdx++;
         
         // Polaroid brutalist styling
-        img.style.position = 'absolute';
-        img.style.width = '350px'; 
-        img.style.height = 'auto';
-        img.style.maxHeight = '450px';
-        img.style.objectFit = 'contain';
-        img.style.backgroundColor = '#fff';
-        img.style.border = '12px solid #fff';
-        img.style.borderBottom = '50px solid #fff'; 
-        img.style.boxShadow = '8px 8px 0 #000';
+        img.className = 'polaroid-img';
         
         // Random placement and rotation
         const rot = (Math.random() - 0.5) * 60; // -30 to 30 degrees
-        const offsetX = (Math.random() - 0.5) * 150;
-        const offsetY = (Math.random() - 0.5) * 150;
+        const isMobile = window.innerWidth <= 768;
+        const offsetRange = isMobile ? 50 : 150;
+        const offsetX = (Math.random() - 0.5) * offsetRange;
+        const offsetY = (Math.random() - 0.5) * offsetRange;
         
         // Initial drop animation state
         img.style.top = `calc(50% + ${offsetY}px)`;
