@@ -596,13 +596,13 @@ body {
   }
 
   #image-canvas {
-    height: 40vh !important;
+    height: 55vh !important;
     flex: none !important;
     border-bottom: 4px solid #000 !important;
   }
 
   #lyrics-pane {
-    height: 60vh !important;
+    height: 45vh !important;
     flex: none !important;
     padding: 10px !important;
     align-items: center !important;
@@ -611,9 +611,26 @@ body {
   }
 
   #lyrics-container {
-    padding: 15px !important;
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  #lyrics-container h3 {
     margin-bottom: 10px !important;
     font-size: 16px !important;
+  }
+
+  #audio-player-container {
+    padding: 10px !important;
+    gap: 10px !important;
+    margin-top: 5px !important;
+  }
+
+  #audio-player-container button, #time-display {
+    padding: 5px 10px !important;
+    font-size: 14px !important;
   }
 
   /* Final page */
