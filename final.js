@@ -186,14 +186,14 @@ function spawnFlower(basketVelX) {
     for(let i = 0; i < 3; i++) {
         const tex = flowerTextures[Math.floor(Math.random() * flowerTextures.length)];
         const spawnX = basket.position.x + (Math.random() * 10 - 5);
-        const flower = Bodies.circle(spawnX, basket.position.y - 40, 20, {
+        const flower = Bodies.circle(spawnX, basket.position.y - 40, 10, {
             restitution: 0.4,
             friction: 0.05,
             render: {
                 sprite: {
                     texture: tex,
-                    xScale: 0.8,
-                    yScale: 0.8
+                    xScale: 0.4,
+                    yScale: 0.4
                 }
             }
         });
