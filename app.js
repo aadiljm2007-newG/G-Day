@@ -1,3 +1,5 @@
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 // Initialize Matter.js
 const Engine = Matter.Engine,
       Render = Matter.Render,
@@ -170,7 +172,7 @@ window.addEventListener('resize', () => {
 const yesBtn = document.getElementById('yes-btn');
 const noBtn = document.getElementById('no-btn');
 
-if (yesBtn && noBtn && window.innerWidth > 768) {
+if (yesBtn && noBtn && !isMobile) {
     // Wait slightly to ensure CSS styling and layout are fully applied
     setTimeout(() => {
         const yesRect = yesBtn.getBoundingClientRect();
@@ -285,7 +287,7 @@ if (yesBtn && noBtn && window.innerWidth > 768) {
 }
 
 // Mobile Canvas Cleanup: Fade out flowers so user can interact with the UI
-if (window.innerWidth <= 768) {
+if (isMobile) {
     setTimeout(() => {
         if (render && render.canvas) {
             render.canvas.style.transition = 'opacity 2s ease';

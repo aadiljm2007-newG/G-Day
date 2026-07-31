@@ -633,3 +633,32 @@ body {
     overflow-y: auto !important;
   }
 }
+
+.inline-style-b38d345f { margin: 0; overflow: hidden; }
+.inline-style-94e770e9 { position: absolute; top: 20px; left: 20px; z-index: 1000; padding: 10px 20px; font-size: 16px; }
+.inline-style-2283a8de { display: flex; flex-direction: row; width: 100vw; height: 100vh; background: var(--bg-main); }
+.inline-style-39f90766 { flex: 1; position: relative; overflow: hidden; }
+.inline-style-0dae0a74 { flex: 1; overflow-y: hidden; padding: 40px; text-align: center; display: flex; flex-direction: column; align-items: center; border-left: 4px solid #000; }
+.inline-style-db5abeaf { font-family: var(--font-sans); font-size: 20px; font-weight: 700; color: #000; line-height: 1.8; padding: 30px; background-color: #fff; border: 4px solid #000; box-shadow: 8px 8px 0 #000; width: 100%; overflow-y: auto; scroll-behavior: smooth; }
+.inline-style-138f8f43 { margin-bottom: 40px; }
+.inline-style-d6ad7464 { display: flex; flex-direction: column; gap: 20px; width: 100%; margin-top: 30px; background: #FF90E8; padding: 20px; border: 4px solid #000; box-shadow: 8px 8px 0 #000; box-sizing: border-box; font-family: 'JetBrains Mono', monospace; font-weight: bold; }
+.inline-style-157f2ff0 { display: flex; gap: 20px; align-items: center; justify-content: space-between; }
+.inline-style-d98ea8dc { background: #fff; border: 4px solid #000; box-shadow: 4px 4px 0 #000; padding: 10px 20px; font-size: 24px; cursor: pointer; font-weight: bold; font-family: inherit; min-width: 80px; transition: transform 0.1s, box-shadow 0.1s; }
+.inline-style-99129a50 { display: flex; align-items: center; gap: 15px; }
+.inline-style-03ff4c00 { background: #fff; color: #000; border: 4px solid #000; padding: 8px 12px; font-size: 16px; box-shadow: 4px 4px 0 #000; min-width: 110px; text-align: center; display: inline-block; }
+.inline-style-81aacfaa { background: #fff; border: 4px solid #000; box-shadow: 4px 4px 0 #000; padding: 8px 12px; font-size: 16px; cursor: pointer; font-weight: bold; font-family: inherit; transition: transform 0.1s, box-shadow 0.1s; }
+.inline-style-5fe4558d { width: 100%; border: 4px solid #000; height: 20px; background: #fff; position: relative; box-shadow: 4px 4px 0 #000; cursor: pointer; }
+.inline-style-77394a30 { width: 0%; height: 100%; background: #000; transition: width 0.1s linear; }
+.inline-style-7c619724 { margin: 0; overflow: hidden; background-color: #FFF2F2; }
+.inline-style-8a2a762b { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 30px; }
+.inline-style-9e46fbe8 { max-width: 350px; height: auto; border: 8px solid #000; box-shadow: -12px 12px 0 #FF90E8; background: #fff; transform: rotate(-90deg); }
+.inline-style-8a10e94c { font-family: 'JetBrains Mono', monospace; font-size: 5vw; font-weight: 900; color: #000; background: #fff; border: 8px solid #000; box-shadow: 12px 12px 0 #FF90E8, 16px 16px 0 #000; padding: 40px; text-transform: uppercase; line-height: 1.2; margin: 0; white-space: nowrap; }
+.inline-style-9cda08fc { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); text-align: center; font-family: 'JetBrains Mono', monospace; font-weight: bold; width: 80%; max-width: 600px; z-index: 100; }
+.inline-style-409d8416 { font-size: 24px; margin-bottom: 10px; }
+.inline-style-3ce1f13e { width: 100%; border: 4px solid #000; height: 30px; background: #fff; box-shadow: 4px 4px 0 #000; }
+.inline-style-28b9c7f9 { width: 0%; height: 100%; background: #FF90E8; transition: width 0.3s ease; }
+.inline-style-61df16ba { margin-bottom: 40px; font-size: 36px; margin-top: 100px; }
+.inline-style-42f54ea8 { display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 20px; }
+.inline-style-324d575d { display: flex; flex-direction: column; align-items: center; gap: 16px; flex: 1; width: 100%; }
+.inline-style-720a10d1 { width: 100%; height: auto; max-height: 65vh; object-fit: contain; border: 4px solid #000; box-shadow: 6px 6px 0 #000; background: #fff; }
+.inline-style-30ae8514 { padding: 12px 32px; font-size: 24px; }
