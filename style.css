@@ -809,7 +809,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    html, .inline-style-7c619724 {
+    html:has(body.inline-style-7c619724), body.inline-style-7c619724 {
         overflow: hidden !important;
         position: fixed !important;
         width: 100% !important;
