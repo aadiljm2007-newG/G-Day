@@ -753,3 +753,57 @@ body {
     }
 }
 
+
+@media (max-width: 768px) {
+    /* Final Page tweaks */
+    #final-text {
+        font-size: 6vw !important;
+        margin-top: 10px !important;
+    }
+    #final-img {
+        max-height: 30vh !important;
+        max-width: 70% !important;
+    }
+    
+    /* Success Page (Choosing Page) Overlap tweak */
+    .inline-style-61df16ba {
+        margin-top: 60px !important; /* give space for progress bar */
+        font-size: 20px !important;
+    }
+    
+    /* Play Controls Neo Brutalism & Fits */
+    #audio-player-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px !important;
+        padding: 5px !important;
+    }
+    
+    #audio-player-container > div {
+        flex-wrap: nowrap !important;
+    }
+
+    #play-pause-btn, #speed-btn, #time-display {
+        border: 2px solid #000 !important;
+        box-shadow: 2px 2px 0 #000 !important;
+        background: #fff !important;
+        color: #000 !important;
+        font-weight: bold !important;
+        padding: 4px 6px !important;
+        font-size: 11px !important;
+        margin: 2px !important;
+    }
+    
+    #play-pause-btn:active, #speed-btn:active {
+        transform: translate(2px, 2px) !important;
+        box-shadow: 0 0 0 #000 !important;
+    }
+    
+    #progress-bar-container {
+        border: 2px solid #000 !important;
+        box-shadow: 2px 2px 0 #000 !important;
+        height: 10px !important;
+        margin-top: 5px !important;
+    }
+}

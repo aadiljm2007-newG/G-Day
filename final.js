@@ -27,9 +27,24 @@ render.canvas.style.position = 'absolute';
 render.canvas.style.top = '0';
 render.canvas.style.left = '0';
 render.canvas.style.zIndex = '100'; // above bg, below text
-render.canvas.style.pointerEvents = 'none';
+/* removed pointer events none */
+
+
+const Mouse = Matter.Mouse;
+const MouseConstraint = Matter.MouseConstraint;
+const mouse = Mouse.create(render.canvas);
+const mConstraint = MouseConstraint.create(engine, {
+    mouse: mouse,
+    constraint: {
+        stiffness: 0.2,
+        render: { visible: false }
+    }
+});
+Composite.add(world, mConstraint);
+render.mouse = mouse;
 
 Render.run(render);
+
 const runner = Runner.create();
 Runner.run(runner, engine);
 

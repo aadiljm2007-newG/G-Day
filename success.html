@@ -45,6 +45,12 @@
   </div>
 
   <script>
+    
+    if (performance && performance.navigation && performance.navigation.type === 1) {
+      localStorage.removeItem('visited_tamil');
+      localStorage.removeItem('visited_english');
+      localStorage.removeItem('visited_hindi');
+    }
     const visitedTamil = localStorage.getItem('visited_tamil') === 'true';
     const visitedEnglish = localStorage.getItem('visited_english') === 'true';
     const visitedHindi = localStorage.getItem('visited_hindi') === 'true';
