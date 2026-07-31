@@ -825,7 +825,6 @@ body {
         z-index: 1 !important;
     }
     #final-img {
-        transform: rotate(0deg) !important;
         max-width: 80% !important;
         max-height: 25vh !important;
     }
