@@ -811,8 +811,8 @@ body {
 @media (max-width: 768px) {
     #final-text-container {
         position: absolute !important;
-        top: auto !important;
-        bottom: 15vh !important;
+        top: 50vh !important;
+        bottom: auto !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
         z-index: 1000 !important;
