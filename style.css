@@ -807,3 +807,18 @@ body {
         margin-top: 5px !important;
     }
 }
+
+@media (max-width: 768px) {
+    .inline-style-8a2a762b {
+        top: 60% !important;
+    }
+    #final-img {
+        transform: rotate(0deg) !important;
+        max-width: 80% !important;
+        max-height: 25vh !important;
+    }
+    #final-text {
+        font-size: 5.5vw !important;
+    }
+}
+
