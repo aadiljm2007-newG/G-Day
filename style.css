@@ -767,7 +767,7 @@ body {
     
     /* Success Page (Choosing Page) Overlap tweak */
     .inline-style-61df16ba {
-        margin-top: 60px !important; /* give space for progress bar */
+        margin-top: 120px !important; /* give space for progress bar */
         font-size: 20px !important;
     }
     
