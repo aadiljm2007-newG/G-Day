@@ -809,6 +809,13 @@ body {
 }
 
 @media (max-width: 768px) {
+    html, .inline-style-7c619724 {
+        overflow: hidden !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 100% !important;
+        touch-action: none !important;
+    }
     #final-text-container {
         position: absolute !important;
         top: 50vh !important;
